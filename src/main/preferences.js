@@ -23,10 +23,10 @@ const getDefaults = () => ( {
 	crosshair: {
 		crosshair: '../static/crosshairs/Actual/leupold-dot.png',
 		color: '#442ac6',
-		size: 80,
+		size: 800,
 		opacity: 80,
 		reticle: 'dot',
-		reticleScale: 100,
+		reticleScale: 1000,
 		fillColor: 'unset',
 		strokeColor: 'unset',
 	},
