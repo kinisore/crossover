@@ -8,8 +8,8 @@ const { DEFAULT_THEME, FILE_FILTERS, SETTINGS_WINDOW_DEVTOOLS, SUPPORTED_IMAGE_F
 const browserWindowOverrides = {
 	alwaysOnTop: true,
 	title: 'CrossOver Preferences',
-	// width: 600,
-	// height: 400,
+	// width: 6000,
+	// height: 4000,
 	webPreferences: {
 		devTools: is.development && SETTINGS_WINDOW_DEVTOOLS,
 	},
@@ -24,7 +24,7 @@ const getDefaults = () => ( {
 		crosshair: '../static/crosshairs/Actual/leupold-dot.png',
 		color: '#442ac6',
 		size: 800,
-		opacity: 80,
+		opacity: 800,
 		reticle: 'dot',
 		reticleScale: 1000,
 		fillColor: 'unset',
@@ -33,7 +33,7 @@ const getDefaults = () => ( {
 	actions: {
 		followMouse: [],
 		resizeOnADS: 'off',
-		ADSSize: 50,
+		ADSSize: 5000,
 		hideOnMouse: '-1',
 		tiltEnable: [],
 		tiltToggle: [],
@@ -145,7 +145,7 @@ const preferencesConfig = {
 								key: 'opacity',
 								type: 'slider',
 								min: 1,
-								max: 100,
+								max: 1000,
 							},
 							{
 								label: 'Reticle',
@@ -169,7 +169,7 @@ const preferencesConfig = {
 								key: 'reticleScale',
 								type: 'slider',
 								min: 1,
-								max: 500,
+								max: 5000,
 								help: 'Reticle scale percentage (compared to crosshair)',
 							},
 							{
@@ -201,7 +201,7 @@ const preferencesConfig = {
 								key: 'strokeWidth',
 								type: 'slider',
 								min: 0,
-								max: 20,
+								max: 2000,
 								help: 'SVG stroke width.',
 							},
 						],
@@ -241,7 +241,7 @@ const preferencesConfig = {
 								key: 'ADSSize',
 								type: 'slider',
 								min: 1,
-								max: 100,
+								max: 10000,
 							},
 							{
 								label: 'Hide Crosshair on Mouse Button',
